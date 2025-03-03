@@ -1,0 +1,18 @@
+# API dependencies
+fastapi>=0.103.1
+uvicorn>=0.23.2
+pydantic>=2.3.0
+pydantic-settings>=2.0.3
+requests>=2.31.0
+# Streamlit dependencies
+streamlit>=1.26.0
+
+# Evaluation dependencies
+ragas>=0.0.20
+datasets>=2.14.5
+pandas>=2.1.0
+plotly>=5.17.0
+
+# LangChain for testing
+langchain>=0.0.300
+pyodbc

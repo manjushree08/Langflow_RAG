@@ -1,0 +1,6 @@
+# API dependencies
+fastapi>=0.103.1
+uvicorn>=0.23.2
+pydantic>=2.3.0
+pydantic-settings>=2.0.3
+requests>=2.31.0

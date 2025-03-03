@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  langflow:
+    image: logspace/langflow:latest
+    ports:
+      - "7860:7860"
+    volumes:
+      - langflow_data:/data
+    environment:
+      - LANGFLOW_DATABASE_URL=sqlite:////data/langflow.db
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - langflow
+    environment:
+      - LANGFLOW_API_URL=http://langflow:7860
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:8000
+
+volumes:
+  langflow_data:
