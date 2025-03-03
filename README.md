@@ -1,11 +1,7 @@
 # LangFlow Streamlit Integration with RAGAS Evaluation
 
 This project integrates LangFlow as a backend API with a Streamlit frontend for a chatbot interface. It also includes RAGAS evaluation for measuring the performance of RAG (Retrieval-Augmented Generation) pipelines.
-
-<img src="data\Langflow.png" alt="Langflow" width="500" height="400">
-
-Below is the chatbot for the application
-<img src="data\Animation.gif" alt="this slowpoke moves"  width="250" />
+<img src="data\Animation.gif" alt="this slowpoke moves"  width="500" height="400"/>
 
 ## Project Structure
 
@@ -21,6 +17,9 @@ project/
 ```
 
 ## Getting Started
+
+### Langflow Graph
+<img src="data\Langflow.png" alt="Langflow" width="500" height="400">
 
 ### Prerequisites
 
